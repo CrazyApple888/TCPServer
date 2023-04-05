@@ -53,6 +53,7 @@ public class TCPPacket implements Serializable {
         ByteArrayOutputStream os = new ByteArrayOutputStream();
         ObjectOutputStream oos = new ObjectOutputStream(os);
         oos.writeObject(this);
+        System.out.println("Я сосу бибу");
         return os.toByteArray();
     }
 
